@@ -68,34 +68,31 @@ table {
   background-color: white;
   width: 100%;
   top: 0;
-  box-shadow: 0px 2px 5px #ccc;
   padding: 1.3em;
-  font-family: 'Roboto', sans-serif;
   /* flex here too */
 }
 
 .left { float: left }
 .right { float: right; }
 
+
 .item {
   width: 75vw;
   height: 75vw;
-  margin: .25em;
   flex-grow: 1;
   flex-shrink: 1;
-  background-color: #ffcbed;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid transparent;
-  transition: all 2s;
+  color: white;
   .project-name {
     font-size: 24px;
-    transition: all 2s;
+    transition: all .4s;
     opacity: 0;
   }
   .project-desc {
-
   }
   &:hover {
     background-color: lightblue;
@@ -107,6 +104,18 @@ table {
   }
 }
 
+.item.i0 { background-image: url("../images/LandingPortfolio_02.jpg") }
+.item.i1 { background-image: url("../images/LandingPortfolio_03.jpg") }
+.item.i2 { background-image: url("../images/LandingPortfolio_04.jpg") }
+.item.i3 { background-image: url("../images/LandingPortfolio_05.jpg") }
+.item.i4 { background-image: url("../images/LandingPortfolio_06.jpg") }
+.item.i5 { background-image: url("../images/LandingPortfolio_07.jpg") }
+.item.i6 { background-image: url("../images/LandingPortfolio_08.jpg") }
+.item.i7 { background-image: url("../images/LandingPortfolio_09.jpg") }
+.item.i8 { background-image: url("../images/LandingPortfolio_10.jpg") }
+.item.i9 { background-image: url("../images/LandingPortfolio_11.jpg") }
+.item.i10 { background-image: url("../images/LandingPortfolio_12.jpg") }
+.item.i11 { background-image: url("../images/LandingPortfolio_13.jpg") }
 
 @media all and (min-width: 480px) {
   .item {
@@ -131,7 +140,7 @@ table {
 
 @media all and (min-width: 1024px) {
   .item {
-    width: 20vw;
-    height: 20vw;
+    width: 21vw;
+    height: 21vw;
   }
 }
