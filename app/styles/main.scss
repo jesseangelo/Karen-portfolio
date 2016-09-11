@@ -129,7 +129,7 @@ table {
 
   }
   .project-info {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -163,6 +163,10 @@ table {
   }
 }
 
+.uspa {
+  display: block;
+  background: url("../images/logo-uspa.png");
+}
 
 @media all and (min-width: 480px) {
   .item {
