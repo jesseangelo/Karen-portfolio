@@ -90,6 +90,61 @@ table {
   }
 }
 
+.project-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition:all 0.5s;
+  background-blend-mode: multiply;
+
+  @include imgPaths(false);
+
+}
+.project-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: all .3s ease-out;
+
+  img {
+    transition: all .5s ease-out;
+    transform: translateY(-20px);
+  }
+
+  .project-line {
+    border: 1px solid white;
+    width: 0px;
+    height: 2px;
+    display: block;
+    margin: 23px 0;
+    transition: all .35s ease-out;
+    transition-delay: .15s;
+  }
+
+  .project-name {
+    font-size: 24px;
+    transition: all .4s;
+    font-weight: bold;
+    margin-bottom: .3em;
+    transform: translateY(20px);
+    transition: all .5s ease-out;
+  }
+  .project-desc {
+    font-size: 12px;
+    transform: translateY(20px);
+    transition: all .5s ease-out;
+    transition-delay: 0.1s;
+  }
+}
+
 .item {
   width: 75vw;
   height: 75vw;
@@ -108,60 +163,21 @@ table {
       transform: scale(1.1);
       @include imgPaths(true);
     }
+    .project-line { width: 27px; }
     .project-info { opacity: 1;}
     .project-name {
-      //transform: scale(1.1);
-      //transform: translateY(0px);
+      transform: translateY(0px);
     }
     .project-desc {
-
+      transform: translateY(0px);
     }
-  }
-
-  .project-image {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    transition:all 0.5s;
-    background-blend-mode: multiply;
-
-    @include imgPaths(false);
-
-  }
-  .project-info {
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-    .project-line {
-      border: 1px solid white;
-      width: 27px;
-      height: 2px;
-      display: block;
-      margin: 23px 0;
-    }
-
-    .project-name {
-      font-size: 24px;
-      transition: all .4s;
-      font-weight: bold;
-      //transform: translateY(0px);
-      transition: all .5s;
-    }
-    .project-desc {
-      font-size: 12px;
-    }
+    img { transform: translateY(0px); }
   }
 }
+
+
+
+
 
 .uspa {
   display: block;
