@@ -173,7 +173,14 @@ table {
   }
 }
 
-
+.wrapper {
+  text-align: center;
+  img {
+    width: 100%; /* default size */
+    &.no-scale { width: auto; }
+  }
+}
+footer { text-align: center; }
 
 
 
