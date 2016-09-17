@@ -88,6 +88,13 @@ table {
   }
 }
 
+/* triggering works! */
+.wireframes {
+  opacity: 0;
+  transition: all 5s;
+  &.triggered { opacity: 1; }
+}
+
 .project-image {
   height: 100%;
   width: 100%;
