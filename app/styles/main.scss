@@ -88,13 +88,6 @@ table {
   }
 }
 
-/* triggering works! */
-.wireframes {
-  opacity: 0;
-  transition: all 5s;
-  &.triggered { opacity: 1; }
-}
-
 .project-image {
   height: 100%;
   width: 100%;
@@ -221,5 +214,39 @@ footer { text-align: center; }
   .item {
     width: 21vw;
     height: 21vw;
+  }
+}
+
+/* triggering works!
+.wireframes {
+  opacity: 0;
+  transition: all 5s;
+  &.triggered { opacity: 1; }
+}
+*/
+
+.content-uspa {
+  .wireframes {
+    position: relative;
+    .content {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      img {
+        position: absolute;
+        width: 65%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      img:nth-child(1) { transition: all 1s .75s; top: 180px; }
+      img:nth-child(2) { transition: all 1s .5s; top: 150px; }
+      img:nth-child(3) { transition: all 1s .25s; top: 120px; }
+    }
+    &.triggered img {
+      &:nth-child(1) { top: 80px; }
+      &:nth-child(2) { top: 50px; }
+      &:nth-child(3) { top: 20px; }
+    }
   }
 }
