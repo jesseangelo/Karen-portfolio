@@ -241,4 +241,9 @@ footer { text-align: center; }
       &:nth-child(3) { top: 20px; }
     }
   }
+  .ui {
+    background-color: #16284c;
+    color: #808080;
+    .elements img { width: auto; }
+  }
 }
