@@ -1,0 +1,17 @@
+$font-color-muted: #808080;
+
+.section-heading, h4 {
+  font-size: 1.875rem;
+}
+.section-subheading, h5 {
+  font-size: .9375rem;
+  font-weight: bold;
+}
+h6 {
+  font-size: .9375rem;
+  color: $font-color-muted;
+}
+.section-text, p {
+  font-size: .875rem;
+  color: $font-color-muted;
+}
