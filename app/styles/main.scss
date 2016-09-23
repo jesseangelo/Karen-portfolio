@@ -111,7 +111,6 @@ $icon-font-path: '../fonts/';
 }
 
 .wrapper {
-  text-align: center;
   img {
     width: 100%; /* default size */
     &.no-scale { width: auto; }
@@ -153,8 +152,6 @@ footer { text-align: center; }
     height: 21vw;
   }
 }
-
-
 
 .content-uspa {
   .wireframes {
