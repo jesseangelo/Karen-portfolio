@@ -180,6 +180,32 @@ footer { text-align: center; }
   .ui {
     background-color: #16284c;
     color: #808080;
-    .elements img { width: auto; }
+    .elements {
+      text-align: center;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      /* You can set flex-wrap and flex-direction individually */
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      /* Or do it all in one line with flex flow */
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      /* tweak the where items line up on the row */
+      /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+      -webkit-align-content: flex-end;
+      align-content: flex-end;
+      img {
+        width: auto;
+        margin: 1.8125rem auto;
+        display: block;
+      }
+      li {  }
+    }
   }
 }

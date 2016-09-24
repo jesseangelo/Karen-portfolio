@@ -6,6 +6,7 @@ $font-color-muted: #808080;
 .section-subheading, h5 {
   font-size: .9375rem;
   font-weight: bold;
+  margin-bottom: .875rem;
 }
 h6 {
   font-size: .9375rem;
@@ -16,3 +17,5 @@ h6 {
   color: $font-color-muted;
   text-transform: uppercase;
 }
+
+.white { color: white; }
