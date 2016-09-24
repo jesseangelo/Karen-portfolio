@@ -17,6 +17,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <!-- endbuild -->
 
   </head>
@@ -66,6 +67,12 @@
       <span class='section-heading'>SITEMAP</span>
       <span class='section-heading-break'></span>
       <p>Worked on a sitemap were we could integrate client requirements.</p>
+      <div class='carousel'>
+        <div><img src="../images/uspa/sitemap1.png"></div>
+        <div><img src="../images/uspa/sitemap2.png"></div>
+        <div><img src="../images/uspa/sitemap3.png"></div>
+        <div><img src="../images/uspa/sitemap4.png"></div>
+      </div>
     </div>
   </section>
   <section class='wireframes'>
@@ -74,9 +81,7 @@
       <img src="../images/uspa/wireframe-10-px-depth.png">
       <img src="../images/uspa/wireframe-15-px-depth.png">
     </div>
-    <div class='bg'>
-
-    </div>
+    <div class='bg'></div>
   </section>
   <section class='ui'>
     <div class='content'>
@@ -159,7 +164,14 @@
 
     <!-- build:js scripts/main.js -->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="scripts/main.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.carousel').slick();
+      });
+    </script>
     <!-- endbuild -->
   </body>
 </html>
