@@ -1,6 +1,13 @@
 
 .left { float: left }
 .right { float: right; }
+.text-center { text-align: center; }
+.vertical-center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.p-b-2rem { padding-bottom: 2rem; }
 
 .section-heading-break {
   margin: 1.5rem 0;

@@ -2,6 +2,7 @@
   "name": "karen-portfolio",
   "private": true,
   "dependencies": {
+    "flexboxgrid": "^6.3.2"
   },
   "overrides": {
     "bootstrap-sass": {
