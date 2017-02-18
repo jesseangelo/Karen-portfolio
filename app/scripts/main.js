@@ -20,3 +20,7 @@ $('.wireframes').inViewport(function(px){
       $(this).addClass('triggered');
     }
 });
+
+$('#link-home').click(function (){
+  document.getElementById('content-main-frame').src = 'home_grid.html';
+});
