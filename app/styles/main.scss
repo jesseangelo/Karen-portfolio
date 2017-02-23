@@ -12,9 +12,13 @@ $icon-font-path: '../fonts/';
 html {
   height: 100%;
 }
-body {
+
+body.root {
   min-height: 100%;
+  overflow: hidden;
 }
+
+
 
 $iframe-offset: 40px;
 $nav-height: 55px;
@@ -24,12 +28,16 @@ $nav-height: 55px;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 95px;
 }
 
 iframe {
-  margin-top: -40px;
+  padding-bottom: 58px;
+  margin-top: 58px;
   width: 100%;
+  &.active {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .nav-main {

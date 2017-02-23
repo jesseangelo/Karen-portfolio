@@ -23,4 +23,5 @@ $('.wireframes').inViewport(function(px){
 
 $('#link-home').click(function (){
   document.getElementById('content-main-frame').src = 'home_grid.html';
+  activateIframe();
 });
