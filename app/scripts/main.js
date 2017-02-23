@@ -15,6 +15,14 @@
   };
 }(jQuery, window));
 
+function activateIframe() {
+  if( $('#content-main-frame').hasClass('active')) {
+    $('#content-main-frame').removeClass('active');
+  } else {
+    $('#content-main-frame').addClass('active');
+  }
+}
+
 $('.wireframes').inViewport(function(px){
     if(px) {
       $(this).addClass('triggered');
