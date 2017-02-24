@@ -35,11 +35,11 @@ $('.link-home').click(function (){
 });
 
 $('#link-about').click(function() {
-  document.getElementById('content-main-frame').src = "https://karencamarasa.myportfolio.com/about";
+  document.getElementById('content-main-frame').src = 'https://karencamarasa.myportfolio.com/about';
   activateIframe();
 });
 
 $('#link-contact').click(function() {
-  document.getElementById('content-main-frame').src = "https://karencamarasa.myportfolio.com/contact";
+  document.getElementById('content-main-frame').src = 'https://karencamarasa.myportfolio.com/contact';
   activateIframe();
 });
