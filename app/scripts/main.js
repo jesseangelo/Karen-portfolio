@@ -29,7 +29,17 @@ $('.wireframes').inViewport(function(px){
     }
 });
 
-$('#link-home').click(function (){
+$('.link-home').click(function (){
   document.getElementById('content-main-frame').src = 'home_grid.html';
+  activateIframe();
+});
+
+$('#link-about').click(function() {
+  document.getElementById('content-main-frame').src = "https://karencamarasa.myportfolio.com/about";
+  activateIframe();
+});
+
+$('#link-contact').click(function() {
+  document.getElementById('content-main-frame').src = "https://karencamarasa.myportfolio.com/contact";
   activateIframe();
 });

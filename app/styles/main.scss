@@ -18,7 +18,9 @@ body.root {
   overflow: hidden;
 }
 
-
+a:hover {
+  cursor: pointer;
+}
 
 $iframe-offset: 40px;
 $nav-height: 55px;

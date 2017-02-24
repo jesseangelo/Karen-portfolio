@@ -28,10 +28,11 @@
     <![endif]-->
 
 <nav class=nav-main>
-  <div class='left'><a id='link-home'><img src="images/karen_logo.png" width="30" style="margin-top: -8px"></a></div>
+  <div class='left'><a class='link-home'><img src="images/karen_logo.png" width="30" style="margin-top: -8px"></a></div>
   <div class=right>
-    <span>PROJECTS</span>
-    <span>ABOUT</span>
+    <span><a class="link-home">PROJECTS</a></span>
+    <span><a id="link-about">ABOUT</a></span>
+    <span><a id="link-contact">CONTACT</a></span>
   </div>
 </nav>
 
@@ -58,6 +59,7 @@
       function resizeIframe(obj) {
         obj.style.height = $(window).height() + 'px';
       }
+
     </script>
   </body>
 </html>
